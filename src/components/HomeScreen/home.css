@@ -1,0 +1,108 @@
+.wd-new-line {
+    white-space: pre-line;
+}
+
+.border-remove {
+    background-color: black;
+    border-left: 0px solid #282828;
+    border-right: 0px solid #282828;
+    border-top: 0px solid #282828;
+    border-bottom: 0px solid #282828;
+}
+
+.border-left {
+
+    border-left: 1px solid #282828;
+}
+
+.border-right{
+    border-right: 1px solid #282828;
+}
+
+.border-bottom{
+
+    border-bottom: 1px solid #282828;
+}
+.lr {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    text-decoration-style: solid;
+    position: absolute;
+    bottom: 1px;
+    left: 7px;
+    color: white;
+
+}
+
+.img-color {
+    color: white;
+}
+
+.button-color {
+    background-color: blue;
+    color: black;
+    border-color: lightgray;
+}
+
+.border-black {
+    color:black;
+}
+
+.card-color{
+    color: lightgrey;
+}
+
+.icon-color {
+    color:white;
+    border-color: black;
+}
+.container-color{
+    color: black;
+}
+
+.follow-color{
+    color: white;
+}
+
+.col-color{
+  background-color: #222;
+}
+
+
+.mx-auto-new {
+    min-width: 100%;
+}
+
+.cog-color {
+    color: orangered;
+}
+
+
+.text-color {
+    color:darkgray;
+}
+
+.text-detail-color {
+    color:black;
+}
+
+.magnifying-glass {
+    position: absolute;
+    padding-left: 12px;
+    margin-top:11px;
+    color: lightgray;
+}
+
+
+.position-search {
+    padding-left: 36px;
+
+    color: dimgray;
+    border: none;
+}
+
+.caption {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 12px;
+}

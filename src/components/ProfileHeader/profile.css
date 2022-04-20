@@ -1,0 +1,146 @@
+.wd-text-color {
+    color:darkgray;
+}
+
+.wd-text-detail-color {
+    color:white;
+}
+
+.wd-profile-edit{
+    width: 100%;
+    color: white;
+    padding: 10px;
+    paddingTop: 15px;
+    backgroundColor: black;
+    border: 1px solid;
+}
+
+.wd-camera-icon{
+    position: relative;
+    right: 50px;
+    color: darkgray;
+    top: 7px;
+}
+
+.wd-camera-icon-banner{
+    position: relative;
+    left: 250px;
+    color: darkgray;
+    bottom: 120px;
+}
+
+.wd-cross-icon-banner{
+    position: relative;
+    left: 160px;
+    color: darkgray;
+    bottom: 120px;
+
+}
+/**{*/
+/*    margin:0px;*/
+/*    padding:0px;*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*body{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 100vh;*/
+/*    background: #dfdfdf;*/
+/*}*/
+.wd-icon-distant{
+    width: 25%;
+    float: left;
+}
+
+.wd-text-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.wd-numbers {
+
+    font-size: 15px;
+    padding-left: 10px;
+
+}
+.wd-icons {
+    padding-top: 12px;
+    margin-left: 12px;
+    position: absolute;
+    width: 504px;
+}
+/*.wd-main-wrapper {*/
+/*    background-image: url("https://cdna.artstation.com/p/assets/images/images/012/066/146/large/amol-shede-cute-panda-final.jpg?1532874630");*/
+/*    background-position: 0 50%;*/
+/*    background-size: 100% auto;*/
+/*    border-radius: 4px 4px 0px 0px;*/
+/*    height:95px;*/
+/*    width:100%;*/
+/*}*/
+
+/*.wd-card-body-border {*/
+/*    border: thick dimgray;*/
+/*    background-color: black;*/
+/*}*/
+/*.wd-profile-link{*/
+/*    background-color: #fff;*/
+/*    border-radius: 6px;*/
+/*    display: inline-block;*/
+/*    float: left;*/
+/*    margin:-30px 5px 0px 8px;*/
+/*    max-width:100%;*/
+/*    padding:1px;*/
+/*    vertical-align: bottom;*/
+/*}*/
+/*.wd-profile-img{*/
+/*    border:2px solid #fff;*/
+/*    border-radius: 7px;*/
+/*    color:#fff;*/
+/*    height:72px;*/
+/*    width:72px;*/
+/*}*/
+/*.wd-profile-marg{*/
+/*    margin:5px 0px 0px;*/
+/*}*/
+/*.wd-profile-name{*/
+/*    font-size:18px;*/
+/*    font-weight: 700;*/
+/*    line-height: 21px;*/
+/*}*/
+/*.wd-profile-name a{*/
+/*    color:inherit;*/
+/*}*/
+/*.wd-profile-state{*/
+/*    padding:15px;*/
+/*}*/
+/*.wd-profile-Arrange{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    margin:0;*/
+/*    min-width:100%;*/
+/*    padding:0px;*/
+/*}*/
+/*ul#profile-Arrange{*/
+/*    list-style: none;*/
+/*    margin:0;*/
+/*    padding:0;*/
+/*}*/
+/*.wd-profile-details a:hover{*/
+/*    text-decoration: none;*/
+/*}*/
+/*.wd-profile-number{*/
+/*    display: block;*/
+/*    font-size: 18px;*/
+/*    font-weight: 500;*/
+/*    transition: color 0.15s ease-in-out 0s;*/
+/*}*/
+/*.wd-profile-label{*/
+/*    color:#8899a6;*/
+/*    font-size:10px;*/
+/*    letter-spacing: 0.02em;*/
+/*    overflow: hidden;*/
+/*    text-transform: uppercase;*/
+/*    transition: color 0.15s ease-in-out 0s;*/
+/*}*/

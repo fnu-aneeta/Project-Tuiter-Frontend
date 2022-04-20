@@ -1,0 +1,34 @@
+[
+    {
+    "topic": "Web Development",
+    "userName": "ReactJS",
+    "time": "- 2h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "image": "https://iconape.com/wp-content/files/zk/93042/svg/react.svg",
+    "tweets": "124k Posting"
+    },
+    {
+        "topic": "Frontend",
+        "userName": "JavaScript",
+        "time": "- 1 day",
+        "title": "JavaScript is a programming language that can run on browsers as well as deskstops",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        "tweets": "123k Posting"
+    },
+    {
+        "topic": "Web Development",
+        "userName": "jQuery",
+        "time": "- last week",
+        "title": "jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+        "image": "https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png",
+        "tweets": "123k Posting"
+    },
+    {
+        "topic": "Web Development",
+        "userName": "NodeJS",
+        "time": "- last month",
+        "title": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser",
+        "image": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
+        "tweets": "123k Posting"
+    }
+]

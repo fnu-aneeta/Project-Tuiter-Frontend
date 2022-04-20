@@ -1,0 +1,246 @@
+
+body {
+    margin: 10px;
+    line-height:1.5rem;
+    background-color: white;
+}
+
+.spacing {
+    line-height:0.8rem;
+
+}
+
+.border-remove {
+    background-color: black;
+    border-left: 0px solid #282828;
+    border-right: 0px solid #282828;
+    border-top: 0px solid #282828;
+    border-bottom: 0px solid #282828;
+}
+
+.border-left {
+    border-left: 1px inherit;
+}
+
+.border-right{
+    border-right: 1px inherit;
+}
+
+.wd-card-rounded-border{
+    border-radius: 15px;
+
+}
+.wd-card-border{
+    border-radius: 25px;
+    border: 1px solid #282828;
+}
+.wd-card-body-border{
+    background-color: black;
+    border-top: 1px solid dimgray;
+}
+
+.wd-border-top {
+    border-top: 1px solid #282828;
+    border-bottom: 1px solid #282828 ;
+}
+
+.wd-ellipsis-position{
+    position: absolute;
+    float: end;
+}
+
+
+
+.wd-card-border-top-radius{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.wd-card-border-bottom-radius{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.wd-card-image-Inspiration4x{
+    border-style: none;
+}
+
+.wd-border-bottom{
+    border-bottom: 1px solid dimgray;
+}
+.wd-border-solid {
+    border-style: solid;
+    color: lightgray;
+    border-bottom: 12px;
+    border-width: 1px;
+
+}
+
+
+
+.lr {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    text-decoration-style: solid;
+    position: absolute;
+    bottom: 1px;
+    left: 7px;
+    color: white;
+
+}
+
+.img-color {
+    color: white;
+}
+
+.button-color {
+    background-color: blue;
+    color: black;
+    border-color: lightgray;
+}
+
+.border-black {
+    color:black;
+}
+
+.card-color{
+    color: lightgrey;
+}
+
+.icon-color {
+    color:white;
+    border-color: black;
+}
+.container-color{
+    color: black;
+}
+
+.follow-color{
+    color: white;
+}
+
+.col-color{
+  background-color: #222;
+}
+
+
+.mx-auto-new {
+    min-width: 100%;
+}
+
+.cog-color {
+    color: red;
+}
+
+
+.text-color {
+    color:darkgray;
+}
+
+.wd-color-card-body {
+    background-color: black
+}
+
+.text-detail-color {
+    color:white;
+
+}
+
+.wd-text-body-font {
+    font-size: 15px;
+}
+
+.magnifying-glass {
+    position: absolute;
+    padding-left: 12px;
+    margin-top:11px;
+    color: lightgray;
+}
+
+
+.position-search {
+    padding-left: 36px;
+
+    color: dimgray;
+    border: none;
+}
+
+.caption {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.wd-flex-container {
+    border-width: 2px;
+    border-color: black;
+    border-style: none;
+}
+
+.wd-margin{
+    padding-right: 2px;
+}
+.wd-circular-image {
+    border-radius: 45px;
+    height: 40px;
+    width: 70px;
+}
+
+.flex-box {
+    margin: 0px;
+    border-style: none;
+    padding: 4px;
+}
+
+.wd-text {
+    font-size: 15px;
+    color: lightgray;
+    width: 506px;
+    padding-right: 12px;
+    margin-left: 50px;
+}
+
+
+.wd-name {
+    font-size: 15px;
+    color: white;
+
+}
+
+.wd-author-handle {
+    font-size: 15px;
+    color: dimgray;
+}
+
+
+.wd-main-content {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-icon-distant{
+    width: 25%;
+    float: left;}
+
+.wd-text-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.wd-text-link-inspiration4x{
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.wd-numbers {
+
+    font-size: 15px;
+    padding-left: 10px;
+
+}
+
+.wd-icons {
+   padding-top: 12px;
+    margin-left: 12px;
+    position: absolute;
+    width: 504px;
+}

@@ -1,0 +1,34 @@
+1- Componenets of UI 
+  i) Navigation bar (Actual Tuiter or Own feature navigation bar)
+  ii) Career development feature
+  iii) What's happening or Who to follow or You might like  
+
+3- Sign up and sign in 
+   Signup 
+    i)Email
+	ii) Password
+	iii) First name
+	iv) Last name
+	v) Radio buttons (I am a Recuiter or candidate)(Miscellenous)
+5- Post a Job (Post button)
+   i) Title
+   ii) Description (Job Role name)
+   iii) Skills (comma seperated java, c++, etc.)
+   iv) Responsibilities (using bullet points)
+    v) Qualification (new line seperated)
+   vi) city
+   vii) State
+5a) Recuiters can see the history of their posted jobs in their profile
+6- Based on keywords users can search jobs by searching c++, javascript, java etc
+6- Delete a Job
+6a- update a job (miscellenous)
+
+8- Recuriters will see 1 more screen where they can post jobs
+
+Questions
+10- Apply functionality ???? 
+11- Recuriters can see other recuriters posted job? yes
+12- Users can see other users Tuit? yes
+12- Update posted Jobs?
+14- Can we use Javascript as well for backend?  yes
+15- Do we need to submit API's uml (same we submitted on A2)
