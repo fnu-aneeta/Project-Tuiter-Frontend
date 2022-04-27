@@ -1,5 +1,6 @@
-import CONSTANTS, {LOCAL_STORAGE, ROLE} from "../../consts";
+import CONSTANTS, {LOCAL_STORAGE, ROLE, API_ALL_USERS, API_DELETE_USER, API_CREATE_USER, API_PROFILE_BY_EMAIL} from "../../consts";
 import history from "../../utils/history";
+import axios from "axios";
 
 export const fetchCurrentProfile = (isRedirectSignIn=true) =>{
     const profileData = localStorage.getItem(LOCAL_STORAGE.KEY_PROFILE);
@@ -59,8 +60,25 @@ export const signIn = (credentials) => {
     });
 }
 
+
+export const deleteUser = (email) =>
+    axios.delete(`${API_DELETE_USER}/${email}`)
+        .then(response => response.data);
+
+export const registerUser = (userProfile) =>
+    axios.post(`${API_CREATE_USER}`, userProfile)
+    .then(response => response.data);
+
+export const fetchUser = (email) =>
+    axios.get(`${API_PROFILE_BY_EMAIL}/${email}`)
+    .then(response => response.data);
+
+export const fetchAllUser = () =>
+    axios.get(`${API_ALL_USERS}`)
+    .then(response => response.data);
+
 export const fetchProfileFromEmail = (email) => {
-    fetch(`${CONSTANTS.API_PROFILE_BY_EMAIL}/${email}`, {
+    fetch(`${API_PROFILE_BY_EMAIL}/${email}`, {
         credentials: 'include',
         headers: {
             'content-type': 'application/json'

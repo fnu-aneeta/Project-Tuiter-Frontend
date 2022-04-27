@@ -1,5 +1,13 @@
-import CONSTANTS, {LOCAL_STORAGE} from "../../consts";
+import CONSTANTS, {
+    API_CREATE_USER,
+    LOCAL_STORAGE,
+    API_PROFILE_BY_EMAIL,
+    API_JOB_POST,
+    API_POSTS,
+    API_DELETE_USER, API_ALL_USERS
+} from "../../consts";
 import {fetchCurrentProfile, fetchCurrentRecruiterProfile, isProfileRoleRecruiter} from "./profileService";
+import axios from "axios";
 
 export const fetchCurrentProfileJobPostsLocalStorage = () =>{
     const jobPosts = localStorage.getItem(LOCAL_STORAGE.KEY_POSTS);
@@ -53,7 +61,17 @@ export const fetchCurrentProfileJobPosts = () => {
             return posts
         })
 }
+export const createJob = (jobPost) =>
+    axios.post(`${API_JOB_POST}`, jobPost)
+        .then(response => response.data);
 
+export const deletePost = (jobId) =>
+    axios.delete(`${API_JOB_POST}/${jobId}`)
+        .then(response => response.data);
+
+export const fetchAllJobPost = () =>
+    axios.get(`${API_POSTS}`)
+        .then(response => response.data);
 
 export const fetchAllPosts = (dispatch, queryString) => {
     fetch(`${CONSTANTS.API_SEARCH_POSTS}/${queryString}`)
