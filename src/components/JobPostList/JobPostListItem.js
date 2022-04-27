@@ -1,6 +1,5 @@
 import React from "react";
 import './jobpost-list-item.css';
-import JobPostStats from "./JobPostStats";
 import {deleteJobPost} from "../../a9/services/postService";
 
 
@@ -16,7 +15,7 @@ const JobPostListItem = ({jobPost}) => {
                 <table>
                     <tr>
                         <td className="align-text-top">
-                            <img className="rounded-circle wd-avatar-image"
+                            <img className="rounded-circle wd-avatar-image" alt="logo-image"
                                  src={jobPost['logo-image']}/>
                         </td>
                         <td className="ps-3" style={{width: '100%'}}>
@@ -46,8 +45,6 @@ const JobPostListItem = ({jobPost}) => {
                                     }
                                 </ul>
                             </div>
-
-                            <JobPostStats stats={jobPost}/>
                         </td>
                     </tr>
                 </table>

@@ -1,12 +1,11 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import history from "../../utils/history"
-import CONSTANTS, {LOCAL_STORAGE} from "../../consts"
+import CONSTANTS from "../../consts"
 import {navigateToSignInPage} from "../../a9/services/profileService"
 
 const SignupItem = () => {
 
-    const [user, setUser] = useState({email: '',	password: '', firstName: '', lastName: '', roles:''});
+    const [user, setUser] = useState({email: '',	password: '', firstName: '', lastName: ''});
 
     const dispatch = useDispatch();
     const save = () => {
@@ -95,24 +94,22 @@ const SignupItem = () => {
                                    border: "1px solid"}}/>
                     </div>
 
-                    <div className="roles">
-                        <label htmlFor="formGroupExampleInput">I am a</label>
-                        <br/>
-                        <input
-                            type="radio" name="roles" id="roles"
-                            value={user.roles}/>&nbsp;Recruiter
-                        <br/>
-                        <input
-                            type="radio" name="roles" id="roles"
-                            value={user.roles}/>&nbsp;Candidate
-                    </div>
+                    {/*<div className="roles">*/}
+                    {/*    <label htmlFor="formGroupExampleInput">I am a</label>*/}
+                    {/*    <br/>*/}
+                    {/*    <input*/}
+                    {/*        type="radio" name="roles" id="roles"*/}
+                    {/*        value={user.roles}/>&nbsp;Recruiter*/}
+                    {/*    <br/>*/}
+                    {/*    <input*/}
+                    {/*        type="radio" name="roles" id="roles"*/}
+                    {/*        value={user.roles}/>&nbsp;Candidate*/}
+                    {/*</div>*/}
 
                     <div className="d-grid mt-2">
-                        {/*<Link to="/signup">*/}
                         <label onClick={save}
                                className="btn btn-primary btn-block rounded-pill">Save
                         </label>
-                        {/*</Link>*/}
                     </div>
                 </form>
             </div>

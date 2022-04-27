@@ -2,9 +2,7 @@ import React from "react";
 import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
 import history from "../../utils/history";
 
-const HomeComponent = ({
-                  active = 'for you'
-                  }) => {
+const HomeComponent = () => {
     const searchString = React.createRef();
     const onSearch = () => {
         if (searchString.current.value) {
@@ -15,7 +13,6 @@ const HomeComponent = ({
         history.go();
 
     }
-    const isActive = (active, path) => `nav-link text-color ${active === path ? 'active' : ''}`
     return (
         <div>
             <div className="row mb-2">

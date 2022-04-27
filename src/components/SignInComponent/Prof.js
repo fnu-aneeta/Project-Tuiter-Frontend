@@ -1,9 +1,7 @@
 import { useHistory } from "react-router-dom";
-// import Navigation from "../Nagivation";
 import NavigationSidebar from "../NavigationSidebar";
 import {useEffect, useState} from "react";
 import {API_URL} from "../../consts";
-// const USER_API = 'http://localhost:4000/api/profile';
 
 
 const Prof = () => {

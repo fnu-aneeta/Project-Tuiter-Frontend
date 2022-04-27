@@ -3,16 +3,13 @@ import './profile.css';
 import {Link} from "react-router-dom";
 
 const ProfileHeaderItems = ({profile = {}}) => {
-    // const profile = useSelector(state => state.profile.profile)
-    // if(!profile) return null;
+
     return (
         <div className="mb-2">
             <div className="border border-dark mt-0">
                 <img src={profile && profile.coverImage} alt="coverImage"
                      width="100%"
                      height="200"/>
-                {/*<span><i className="fas fa-times wd-cross-icon-banner"></i>*/}
-                {/*<i className="fas fa-camera wd-camera-icon-banner"></i></span>*/}
             </div>
 
             <div className="row">
@@ -66,9 +63,6 @@ const ProfileHeaderItems = ({profile = {}}) => {
                         <span>{profile && profile.education && profile.education[0] && profile.education[0].school}</span>
                     </div>
 
-                    {/*<div>*/}
-                    {/*    <span>{profile && profile.experience && profile.experience.school}</span>*/}
-                    {/*</div>*/}
                 </div>
 
             </table>

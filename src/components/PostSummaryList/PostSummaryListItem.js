@@ -1,26 +1,16 @@
 import React from "react";
 import '../HomeScreen/home.css';
-import {Link} from "react-router-dom";
 
-const PostSummaryListItem = (
-    {
-        post
-    }
-) => {
+const PostSummaryListItem = ({post}) => {
 
     return(
               <li className="list-group-item">
-
-                  {/*{JSON.stringify(post)}*/}
-                            <div className="row">
+                   <div className="row">
                                 <div className="col-10">
 
                                     <span className="fw-bold"><a href={post.url}> {post.title}</a></span>
 <br/>
                                    <div><a href={post.url}> i{post.companyName}</a></div>
-                                    {/*<Link to="/description-job">*/}
-                                    {/*    <span className="d-none d-xl-inline-block">{post.companyName}</span>*/}
-                                    {/*</Link>*/}
 
                                     <div>
                                         <span>{post && post.address && post.address.city}, </span>

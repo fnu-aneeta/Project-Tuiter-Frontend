@@ -74,14 +74,11 @@ const EditProfileItem = () => {
                 </div>
 
                 <div className="col-1">
-                    {/*<Link to="/profile">*/}
                         <button onClick={save}
                                 className="rounded-pill margin-left">Save
                         </button>
-                    {/*</Link>*/}
                 </div>
-            {/*// <button onClick={save}> save </button>*/}
-            {/*// {JSON.stringify(profile)}*/}
+
   </div>
             <div className="row">
                 <img src={profile && profile.coverImage} alt="coverImage"

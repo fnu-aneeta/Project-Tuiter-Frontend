@@ -1,5 +1,4 @@
 const TWEET_API = 'http://localhost:4000/api/tweets';
-// const TWEET_API = 'https://node-on-server.herokuapp.com';
 
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
@@ -28,23 +27,6 @@ export const postNewTweet = (dispatch, newTweet) =>
         );
 
 
-
-export const likeTweet = (dispatch, tweet) =>
-    fetch(`${TWEET_API}/${tweet._id}/like`, {
-        method: 'PUT',
-        body: JSON.stringify(tweet),
-        headers: {
-            'content-type': 'application/json'
-        }
-    })
-
-        .then(response =>
-        {
-        fetchAllTweets(dispatch);
-            // dispatch({
-            //     type: 'like-tweet',
-            //     response
-              });
 
 
 

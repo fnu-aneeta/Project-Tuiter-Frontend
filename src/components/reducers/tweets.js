@@ -12,31 +12,12 @@ const tweets = (state = initialState, action) => {
             })
             break;
         case 'like-tweet':
-            // return ({
-            //     tweets: state.tweets.map(tweet => {
-            //         if(tweet._id === action.tweet._id) {
-            //             if(tweet.liked === true) {
-            //                 tweet.liked = false;
-            //                 tweet.stats.likes--;
-            //             } else {
-            //                 tweet.liked = true;
-            //                 tweet.stats.likes++;
-            //             }
-            //             return tweet;
-            //         } else {
-            //             return tweet;
-            //         }
-            //     })
-
-            // });
             return tweets;
             break;
         case 'delete-tweet':
             return ({
             tweets: state.tweets.filter(tweet => tweet._id !== action.tweet._id)
         })
-            // state.tweets.filter(tweet => tweet._id !== action.tweet._id)
-               // tweets: state.tweets.filter(tweet => tweet._id !== action.tweet._id)
 
             break;
         case 'create-tweet':
@@ -55,7 +36,6 @@ const tweets = (state = initialState, action) => {
                 "handle": "ReactJS",
                 "time": "2h",
                 "tweet": action.tweet,
-                //["title" : "test", "tweet": "test"]
                 "avatar-image": "https://iconape.com/wp-content/files/zk/93042/svg/react.svg",
                 "logo-image": "https://iconape.com/wp-content/files/zk/93042/svg/react.svg",
                 "stats": {
@@ -64,20 +44,6 @@ const tweets = (state = initialState, action) => {
                     "likes": 345
                 },
             };
-            // return ({
-            //     tweets: [
-            //         tweet,
-            //         ...state.tweets,
-            //     ]
-            // });
-
-                // {
-                //     ...tweet,
-                //     "tweet": action.tweet
-                // },
-                // tweet,
-                // ...state
-
                     return (
                         {
                             "tweets": [

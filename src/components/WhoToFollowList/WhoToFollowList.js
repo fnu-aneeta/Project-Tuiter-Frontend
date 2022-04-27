@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-//import who from "./who.json";
 import WhoToFollowListItem from "./WhoToFollowListItem";
 import {useDispatch ,useSelector} from "react-redux";
 import {fetchAllWho} from "../../a9/services/whoService";

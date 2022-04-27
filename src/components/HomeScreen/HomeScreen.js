@@ -1,9 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar";
 import HomeComponent from "./HomeComponent.js";
 import WhoToFollowList from "../WhoToFollowList/WhoToFollowList.js";
-import CookieConsent, { Cookies } from "react-cookie-consent";
-import {Link} from "react-router-dom";
-import CookieConsentComponent from "../CookieConsentComponent/CookieConsentComponent";
 
 const HomeScreen = () => {
     return (
@@ -17,10 +14,6 @@ const HomeScreen = () => {
                 </div>
                 <div className="col-4 d-none d-lg-block col-lg-4 col-xl-4 col-xxl-4">
                     <WhoToFollowList/>
-                </div>
-
-                <div>
-                    <CookieConsentComponent/>
                 </div>
 
             </div>

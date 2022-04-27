@@ -1,12 +1,9 @@
 import CONSTANTS, {
-    API_CREATE_USER,
     LOCAL_STORAGE,
-    API_PROFILE_BY_EMAIL,
     API_JOB_POST,
     API_POSTS,
-    API_DELETE_USER, API_ALL_USERS
 } from "../../consts";
-import {fetchCurrentProfile, fetchCurrentRecruiterProfile, isProfileRoleRecruiter} from "./profileService";
+import {fetchCurrentProfile, fetchCurrentRecruiterProfile} from "./profileService";
 import axios from "axios";
 
 export const fetchCurrentProfileJobPostsLocalStorage = () =>{

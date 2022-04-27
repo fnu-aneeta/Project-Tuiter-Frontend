@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-//import post from "./post.json";
 import PostSummaryListItem from "./PostSummaryListItem";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchAllPosts} from "../../a9/services/postService";
@@ -7,6 +6,7 @@ import {useLocation} from "react-router-dom";
 
 
 const selectAllPosts = (state) => state.post.post;
+
 const PostSummaryList = ({title}) => {
     const { search } = useLocation();
     const post = useSelector(selectAllPosts);

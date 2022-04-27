@@ -1,6 +1,6 @@
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
-import {BrowserRouter, Link, Route} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 import {combineReducers,createStore} from "redux";
 import {Provider} from "react-redux";
 import who from "./components/reducers/who";
@@ -14,7 +14,6 @@ import ProfileScreen from "./components/ProfileScreen/ProfileScreen";
 import EditProfileScreen from "./components/EditProfileScreen/EditProfileScreen";
 import SignInScreen from "./components/SignInComponent/SignInScreen";
 import SignupScreen from "./components/SignUpComponent/SignupScreen";
-import descriptionJob from "./components/PostSummaryList/descriptionJob";
 
 const reducer = combineReducers({tweets: tweets, who, profile, post})
 const store = createStore(reducer);
@@ -29,15 +28,10 @@ function App() {
                 <div className="container">
                     <Route path={["/", "/home"]} exact={true} component={HomeScreen}/>
                     <Route path="/job-post" exact={true} component={JobPostScreen}/>
-                    {/*<Route path="/blog" exact={true} component={BlogScreen}/>*/}
-
                     <Route path="/editProfile" exact={true} component={EditProfileScreen}/>
-                    {/*<Route path="/contact" exact={true} component={ContactUsScreen}/>*/}
-                    {/*<Route path="/privacy-policy" exact={true} component={PrivacyPolicyScreen}/>*/}
                     <Route path="/sign-in" exact={true} component={SignInScreen}/>
                     <Route path="/profile" exact={true} component={ProfileScreen}/>
                     <Route path="/sign-up" exact={true} component={SignupScreen}/>
-                    <Route path="/description-job" exact={true} component={descriptionJob}/>
                 </div>
 
             </Provider>

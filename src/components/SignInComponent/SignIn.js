@@ -42,7 +42,6 @@ const SignIn = () => {
                     </button>
                 </div>
             </div>
-            {/*<NavigationSidebar/>*/}
         </div>
     );
 };

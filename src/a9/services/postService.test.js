@@ -3,15 +3,9 @@ import {
     deletePost, createJob, deleteJobPost, fetchAllJobPost
 } from "./postService";
 
-import {
-    deleteUser, fetchAllUser,
-    registerUser
-} from "./profileService";
-
 describe('postJob', () => {
     const testJobPost = {
         title: "Data Analyst",
-        // qualifications: ["bachelors","masters"]
     }
 
     beforeAll(() => {
@@ -27,32 +21,9 @@ describe('postJob', () => {
     test('can post job with REST API', async () => {
         const newPost = await createJob(testJobPost);
         expect(newPost.title).toEqual(testJobPost.title);
-        // expect(newPost.qualifications).toEqual(testJobPost.qualifications);
     });
 });
 
-describe('deleteJob', () => {
-    const testJobPost = {
-        title: "Data Analyst",
-        // qualifications: ["bachelors","masters"]
-    }
-
-    beforeAll(() => {
-            return createJob(testJobPost);
-        }
-    );
-
-    afterAll(() => {
-            return deleteJobPost(testJobPost.id);
-        }
-    );
-
-    test('can delete job post with REST API', async () => {
-        const result = await deleteJobPost(testJobPost.title);
-        expect(result.deletedCount).toBeGreaterThanOrEqual(1);
-
-    });
-});
 
 describe('fetchAllPosts', () => {
     const testJobPost1 = {
